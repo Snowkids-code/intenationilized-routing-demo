@@ -1,0 +1,42 @@
+.navbar-container {
+  @include dimensions(6vh, 100vw);
+  background-color: rgb(110, 108, 108);
+  display: flex;
+
+  .navbar-left-wrapper {
+    @include positionComponents(center, flex-start);
+    flex: 1;
+  }
+
+  .navbar-right-wrapper {
+    flex: 1;
+    @include positionComponents(center, flex-start);
+
+    .navbar-currency-wrapper {
+      @include dimensions(fit-content, 5rem);
+      cursor: pointer;
+
+      .navbar-currency-display {
+        position: fixed;
+        background-color: rgb(149, 146, 146);
+        width: 5rem;
+        text-align: center;
+
+        div {
+          border-bottom: 1px solid #000;
+          text-align: center;
+
+          &:hover {
+            background-color: whitesmoke;
+          }
+
+          p {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0.5rem 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -33,7 +33,7 @@ module.exports = nextConfig;
 // };
 
 
-//Using domain routing, you can configure loicales to be served from different domains
+// Using domain routing, you can configure loicales to be served from different domains
 
 module.exports = {
   i18n: {

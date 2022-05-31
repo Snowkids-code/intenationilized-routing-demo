@@ -1,0 +1,10 @@
+@mixin dimensions($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin positionComponents($align, $justify) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}

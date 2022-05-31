@@ -10,7 +10,7 @@ export function middleware(request: NextRequest) {
 
     if (shouldHandleLocale) {
         const url = request.nextUrl.clone()
-        url.pathname = '/en${request.nextURL.pathname}'
+        url.pathname = '/en'
         return NextResponse.redirect(url)
     }
 
